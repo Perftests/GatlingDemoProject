@@ -11,7 +11,7 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
 import static io.gatling.javaapi.jdbc.JdbcDsl.*;
 
-public class perflogin2 extends Simulation {
+public class Simulation30users5min extends Simulation {
 
         private int usersPerSecond = 5;
         private int totalUsers = 5;
@@ -112,7 +112,7 @@ public class perflogin2 extends Simulation {
 
                                 );
 
-                setUp(scn.injectClosed(constantConcurrentUsers(25).during(Duration.ofMinutes(10)))
+                setUp(scn.injectClosed(constantConcurrentUsers(30).during(Duration.ofMinutes(5)))
                                 .protocols(httpProtocol));
 
         }
