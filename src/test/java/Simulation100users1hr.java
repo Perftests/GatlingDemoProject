@@ -13,12 +13,12 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
 import static io.gatling.javaapi.jdbc.JdbcDsl.*;
 
-public class Simulation100users30min extends Simulation {
+public class Simulation100users1hr extends Simulation {
 
         public static void main(String[] args) {
                 GatlingPropertiesBuilder props = new GatlingPropertiesBuilder()
-                                .simulationClass("perfproxy.Simulation100users30min"); // Replace with your actual
-                                                                                       // simulation class
+                                .simulationClass("perfproxy.Simulation100users1hr"); // Replace with your actual
+                                                                                     // simulation class
                 Gatling.fromMap(props.build());
 
         }
