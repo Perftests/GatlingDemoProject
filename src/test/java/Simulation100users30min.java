@@ -25,7 +25,7 @@ public class Simulation100users30min extends Simulation {
 
         {
                 FeederBuilder<String> loginFeeder = csv(
-                                "D:\\Gatling\\gatling-maven-plugin-demo-java-main\\gatling-maven-plugin-demo-java-main\\src\\test\\resources\\userDetails.csv")
+                                "D:\\Projects\\GatlingDemoProject\\src\\test\\resources\\userDetails.csv")
                                 .circular();
                 HttpProtocolBuilder httpProtocol = http
                                 .baseUrl("https://perfproxy.cnx.cwp.pnp-hcl.com");
